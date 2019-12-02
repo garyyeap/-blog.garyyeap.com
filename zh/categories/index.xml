@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Indecision</title>
+    <link>https://blog.garyyeap.rocks/zh/categories/</link>
+    <description>Recent content in Categories on Indecision</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 26 Mar 2019 08:47:11 +0100</lastBuildDate>
+    
+	<atom:link href="https://blog.garyyeap.rocks/zh/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>讀書</title>
+      <link>https://blog.garyyeap.rocks/zh/categories/%E8%AE%80%E6%9B%B8/</link>
+      <pubDate>Tue, 26 Mar 2019 08:47:11 +0100</pubDate>
+      
+      <guid>https://blog.garyyeap.rocks/zh/categories/%E8%AE%80%E6%9B%B8/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

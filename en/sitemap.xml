@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/en/authors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.rocks/zh/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.rocks/en/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.rocks/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.rocks/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.rocks/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.rocks/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/en/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.rocks/zh/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.rocks/en/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.rocks/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.rocks/en/tags/"
+                />
+  </url>
+  
+</urlset>
