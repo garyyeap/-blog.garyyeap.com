@@ -33,18 +33,13 @@
   </url>
   
   <url>
-    <loc>https://blog.garyyeap.rocks/categories/%E8%AE%80%E6%9B%B8/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.garyyeap.rocks/read/brave-new-world/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.garyyeap.rocks/tags/%E7%A5%9E%E8%A9%B1/</loc>
-    <lastmod>2020-01-25T00:00:00+00:00</lastmod>
+    <loc>https://blog.garyyeap.rocks/categories/%E8%AE%80%E6%9B%B8/</loc>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -53,12 +48,17 @@
   </url>
   
   <url>
-    <loc>https://blog.garyyeap.rocks/tags/%E6%AD%B7%E5%8F%B2/</loc>
-    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+    <loc>https://blog.garyyeap.rocks/tags/%E7%A5%9E%E8%A9%B1/</loc>
+    <lastmod>2020-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.garyyeap.rocks/read/a-short-history-of-progress/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/tags/%E6%AD%B7%E5%8F%B2/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url>
   
