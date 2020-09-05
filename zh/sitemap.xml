@@ -4,12 +4,12 @@
   
   <url>
     <loc>https://blog.garyyeap.rocks/zh/read/</loc>
-    <lastmod>2019-09-17T08:47:11+01:00</lastmod>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.garyyeap.rocks/zh/categories/</loc>
-    <lastmod>2019-09-17T08:47:11+01:00</lastmod>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -24,7 +24,7 @@
   
   <url>
     <loc>https://blog.garyyeap.rocks/zh/</loc>
-    <lastmod>2019-09-17T08:47:11+01:00</lastmod>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,7 +39,7 @@
   
   <url>
     <loc>https://blog.garyyeap.rocks/zh/tags/</loc>
-    <lastmod>2019-09-17T08:47:11+01:00</lastmod>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -53,28 +53,48 @@
   </url>
   
   <url>
-    <loc>https://blog.garyyeap.rocks/zh/tags/%E6%AD%B7%E5%8F%B2/</loc>
-    <lastmod>2019-09-17T08:47:11+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/categories/%E8%AE%80%E6%9B%B8/</loc>
-    <lastmod>2019-09-17T08:47:11+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/read/a-short-history-of-progress/</loc>
-    <lastmod>2019-09-17T08:47:11+01:00</lastmod>
+    <loc>https://blog.garyyeap.rocks/zh/tags/%E5%8F%8D%E7%83%8F%E6%89%98%E9%82%A6/</loc>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.garyyeap.rocks/zh/tags/%E7%A7%91%E5%B9%BB/</loc>
-    <lastmod>2017-03-13T08:47:11+01:00</lastmod>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/zh/categories/%E8%AE%80%E6%9B%B8/</loc>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/zh/read/brave-new-world/</loc>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/zh/tags/%E7%A5%9E%E8%A9%B1/</loc>
+    <lastmod>2020-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/zh/read/talk-big-of-mountains-and-seas/</loc>
+    <lastmod>2020-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/zh/tags/%E6%AD%B7%E5%8F%B2/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.garyyeap.rocks/zh/read/a-short-history-of-progress/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.garyyeap.rocks/zh/read/genocidal-organ/</loc>
-    <lastmod>2017-03-13T08:47:11+01:00</lastmod>
+    <lastmod>2017-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
