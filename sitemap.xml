@@ -2,14 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.garyyeap.rocks/read/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.garyyeap.rocks/code/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.rocks/wander/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.garyyeap.rocks/read/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+    <loc>https://blog.garyyeap.rocks/categories/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.rocks/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.rocks/tags/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.rocks/tags/%E5%9C%B0%E7%90%83%E7%A7%91%E5%AD%B8/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.rocks/tags/%E5%9C%B0%E8%B3%AA%E5%AD%B8/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.rocks/read/timefulness/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.rocks/tags/%E6%B0%A3%E5%80%99%E8%AE%8A%E9%81%B7/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.rocks/tags/%E7%A7%91%E6%99%AE/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.rocks/categories/%E8%AE%80%E6%9B%B8/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.rocks/wander/back-to-malaysia-during-covid-19/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
@@ -17,16 +44,10 @@
     <loc>https://blog.garyyeap.rocks/tags/babel/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.garyyeap.rocks/categories/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.garyyeap.rocks/tags/covid-19/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.rocks/tags/es6/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.garyyeap.rocks/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.rocks/tags/javascript/</loc>
@@ -38,9 +59,6 @@
     <loc>https://blog.garyyeap.rocks/tags/polyfill/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.garyyeap.rocks/tags/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.garyyeap.rocks/categories/%E5%AF%AB%E6%89%A3/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -50,7 +68,7 @@
     <loc>https://blog.garyyeap.rocks/tags/%E7%96%AB%E6%83%85/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.garyyeap.rocks/code/babel-polyfill-methods/</loc>
+    <loc>https://blog.garyyeap.rocks/code/babel-transfrom-runtime-expained/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.rocks/tags/%E5%8F%8D%E7%83%8F%E6%89%98%E9%82%A6/</loc>
@@ -60,9 +78,6 @@
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.rocks/read/brave-new-world/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.garyyeap.rocks/categories/%E8%AE%80%E6%9B%B8/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.rocks/read/talk-big-of-mountains-and-seas/</loc>

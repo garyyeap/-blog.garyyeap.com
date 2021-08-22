@@ -8,10 +8,10 @@
     <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.rocks/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>詳解 @babel/plugin-transform-runtime</title>
-      <link>https://blog.garyyeap.rocks/code/babel-polyfill-methods/</link>
+      <link>https://blog.garyyeap.rocks/code/babel-transfrom-runtime-expained/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/code/babel-polyfill-methods/</guid>
+      <guid>https://blog.garyyeap.rocks/code/babel-transfrom-runtime-expained/</guid>
       <description>@babel/plugin-transform-runtime 主要是要解決 Polyfill、Helper 和 Regenerator 編譯產生的一些問題，下面會逐一介紹和講解其解決的方法。
 Polyfill 有在寫網頁前端的人對這名詞應該都不陌生，如果你丟這個詞去查字典的話，它的解釋是某種填充材料，在 Polyfill 這個名詞出現以前有另一個名詞叫 Shim， 同樣如果去查字典的解釋是墊片，兩者之間有什麼不同呢？舉個例子，假如一面牆上破了一個洞，你用一塊板子釘上去蓋住它那就是 Shim，如果你用補土把它補好補滿那就是 Polyfill，差異在於前者你可以很明顯知道有個不一樣的外來物，後者你不會有感覺。換成程式碼的話，如果要解決不同瀏覽器處理 fullscreen api 差異的問題:
 Shim 形式(Source)：
