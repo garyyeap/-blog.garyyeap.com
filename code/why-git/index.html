@@ -2,21 +2,23 @@
 <html lang='zh' dir='auto'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Personal blog by Gary Yeap.'>
+<meta name='description' content='最近被問到 Git 是什麼，要怎麼用，然後我就翻了一輪網路上的教學，發現大部分都是直接就教指令要不就是一堆分叉線圖。其實相對於一些初學者來說，學習的動機無非是看到徵人條件裡面有列，要不就是被資深同事之類他人要求來學，而對某部分人來說，背指令或者說生硬的記熟步驟的學習過程其實還蠻無聊的，理解爲什麼要用，有什麼好處其實才是重點，這樣才能學得知所以然，然後就有了這篇文章的出現。
+問到 Git 是什麼，大部分的回答都是版本控制工具，但其實以我個人的經驗來說，版本控制功能是到真的有具體產品在線上且很多人使用時才會被用到，一般而言初學者連程式開發都是還在學習階段，更不用談到後續上線維護，所以針對初學者來說，怎麼在學習開發階段就可以好好利用 Git 才是重點。
+如果是'>
 <meta name='theme-color' content='#444444'>
 
-<meta property='og:title' content='標籤: es6 • Indecision'>
-<meta property='og:description' content='Personal blog by Gary Yeap.'>
-<meta property='og:url' content='https://blog.garyyeap.rocks/tags/es6/'>
+<meta property='og:title' content='寫扣: 非典型 Git 教學之爲什麼要用 Git • Indecision'>
+<meta property='og:description' content='最近被問到 Git 是什麼，要怎麼用，然後我就翻了一輪網路上的教學，發現大部分都是直接就教指令要不就是一堆分叉線圖。其實相對於一些初學者來說，學習的動機無非是看到徵人條件裡面有列，要不就是被資深同事之類他人要求來學，而對某部分人來說，背指令或者說生硬的記熟步驟的學習過程其實還蠻無聊的，理解爲什麼要用，有什麼好處其實才是重點，這樣才能學得知所以然，然後就有了這篇文章的出現。
+問到 Git 是什麼，大部分的回答都是版本控制工具，但其實以我個人的經驗來說，版本控制功能是到真的有具體產品在線上且很多人使用時才會被用到，一般而言初學者連程式開發都是還在學習階段，更不用談到後續上線維護，所以針對初學者來說，怎麼在學習開發階段就可以好好利用 Git 才是重點。
+如果是'>
+<meta property='og:url' content='https://blog.garyyeap.rocks/code/why-git/'>
 <meta property='og:site_name' content='Indecision'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content='2022-03-10T00:00:00Z'/><meta name='twitter:card' content='summary'>
+<meta property='og:type' content='article'><meta property='article:section' content='code'><meta property='article:tag' content='git'><meta property='article:published_time' content='2022-03-10T00:00:00Z'/><meta property='article:modified_time' content='2022-03-10T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.82.1" />
 
-  <title>標籤: es6 • Indecision</title>
-  <link rel='canonical' href='https://blog.garyyeap.rocks/tags/es6/'>
-  
-    <link href="https://blog.garyyeap.rocks/tags/es6/index.xml" rel="alternate" type="application/rss+xml" title="Indecision" />
+  <title>寫扣: 非典型 Git 教學之爲什麼要用 Git • Indecision</title>
+  <link rel='canonical' href='https://blog.garyyeap.rocks/code/why-git/'>
   
   
   <link rel='icon' href='/favicon.ico'>
@@ -38,7 +40,7 @@ if (!doNotTrack) {
   
 
 </head>
-<body class='term type-tags taxonomy-tag has-sidebar'>
+<body class='page type-code has-sidebar'>
 
   <div class='site'><div id='sidebar' class='sidebar'>
   <a class='screen-reader-text' href='#main-menu'>跳到主頁</a>
@@ -165,7 +167,7 @@ if (!doNotTrack) {
     <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
   <section class='widget widget-breadcrumbs sep-after'>
     <nav id='breadcrumbs'>
-      <ol><li><a href='/'>主頁</a></li><li><a href='/tags/'>Tags</a></li><li><span>es6</span></li></ol>
+      <ol><li><a href='/'>主頁</a></li><li><a href='/code/'>寫扣</a></li><li><span>非典型 Git 教學之爲什麼要用 Git</span></li></ol>
     </nav>
   </section></div>
       </div>
@@ -173,44 +175,100 @@ if (!doNotTrack) {
       <main id='content'>
 
 
-<header class='header'>
+<article lang='zh' class='entry'>
+  
+
+<header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'><span class='taxonomy-name'>標籤: </span>es6</h1>
-
+      <h1 class='title'>寫扣: 非典型 Git 教學之爲什麼要用 Git</h1>
       
 
     </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+
+</svg>
+<span class='screen-reader-text'>發布 </span>
+  <time class='entry-date' datetime='2022-03-10T00:00:00Z'>2022, Mar 10</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+
+</svg>
+需要1分鐘讀完
+</span>
+
+
+</div>
+
+
   </div>
 </header>
 
-
-
-
-<div class='container list-container'>
-  <ul class='list'>
-    
-      <li class='item'>
-  <div class='meta'>
-    <span>
-  <span class='screen-reader-text'>發布 </span>
-  <time datetime='2021-04-29T00:00:00Z'>2021, Apr 29</time>
-</span>
-
-  </div>
-  <header class='item-header'>
-    <h3 class='item-title'>
-      <a href='/code/babel-transfrom-runtime-expained/'>詳解 @babel/plugin-transform-runtime</a>
-    </h3>
-  </header>
-</li>
-
-    
-  </ul>
-
+  
   
 
+  <div class='container entry-content'>
+  <p>最近被問到 Git 是什麼，要怎麼用，然後我就翻了一輪網路上的教學，發現大部分都是直接就教指令要不就是一堆分叉線圖。其實相對於一些初學者來說，學習的動機無非是看到徵人條件裡面有列，要不就是被資深同事之類他人要求來學，而對某部分人來說，背指令或者說生硬的記熟步驟的學習過程其實還蠻無聊的，理解爲什麼要用，有什麼好處其實才是重點，這樣才能學得知所以然，然後就有了這篇文章的出現。</p>
+<p>問到 Git 是什麼，大部分的回答都是版本控制工具，但其實以我個人的經驗來說，版本控制功能是到真的有具體產品在線上且很多人使用時才會被用到，一般而言初學者連程式開發都是還在學習階段，更不用談到後續上線維護，所以針對初學者來說，怎麼在學習開發階段就可以好好利用 Git 才是重點。</p>
+<p>如果是</p>
+
 </div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+    <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+
+</svg>
+<span class='screen-reader-text'>分類: </span><a class='category' href='/categories/%E5%AF%AB%E6%89%A3/'>寫扣</a></div>
+<div class='tags'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+
+</svg>
+<span class='screen-reader-text'>標籤: </span><a class='tag' href='/tags/git/'>git</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/code/babel-transfrom-runtime-expained/'>
+        <span aria-hidden='true'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+
+</svg>
+ 上一個</span>
+        <span class='screen-reader-text'>上一篇文章: </span>詳解 @babel/plugin-transform-runtime</a>
+    </div></div>
+</nav>
+
+
+
 
       </main>
 

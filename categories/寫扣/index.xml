@@ -5,7 +5,18 @@
     <link>https://blog.garyyeap.rocks/categories/%E5%AF%AB%E6%89%A3/</link>
     <description>Recent content in 寫扣 on Indecision</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.rocks/categories/%E5%AF%AB%E6%89%A3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.rocks/categories/%E5%AF%AB%E6%89%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>非典型 Git 教學之爲什麼要用 Git</title>
+      <link>https://blog.garyyeap.rocks/code/why-git/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.rocks/code/why-git/</guid>
+      <description>最近被問到 Git 是什麼，要怎麼用，然後我就翻了一輪網路上的教學，發現大部分都是直接就教指令要不就是一堆分叉線圖。其實相對於一些初學者來說，學習的動機無非是看到徵人條件裡面有列，要不就是被資深同事之類他人要求來學，而對某部分人來說，背指令或者說生硬的記熟步驟的學習過程其實還蠻無聊的，理解爲什麼要用，有什麼好處其實才是重點，這樣才能學得知所以然，然後就有了這篇文章的出現。
+問到 Git 是什麼，大部分的回答都是版本控制工具，但其實以我個人的經驗來說，版本控制功能是到真的有具體產品在線上且很多人使用時才會被用到，一般而言初學者連程式開發都是還在學習階段，更不用談到後續上線維護，所以針對初學者來說，怎麼在學習開發階段就可以好好利用 Git 才是重點。
+如果是</description>
+    </item>
+    
     <item>
       <title>詳解 @babel/plugin-transform-runtime</title>
       <link>https://blog.garyyeap.rocks/code/babel-transfrom-runtime-expained/</link>
