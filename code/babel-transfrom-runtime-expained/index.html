@@ -15,14 +15,14 @@ Polyfill 有在寫網頁前端的人對這名詞應該都不陌生，如果你�
 Shim 形式(Source)：
 import Fullscreen from &#39;easy-fullscreen&#39;; if (Fullscreen.isEnabled) { fullscreenButton.onclick = function () { // check if is in fullscreen mode  if (Fullscreen.isFullscreen) { // exit fullscreen  Fullscreen.exit(); } else { // request to enter fullscreen  Fullscreen.request(fullscreenElement); } }; } Polyfill 形式：
 import &#39;core-js&#39;; if (document.documentElement.requestFullscreen) { fullscreenButton.onclick = function () { if (document.'>
-<meta property='og:url' content='https://blog.garyyeap.rocks/code/babel-transfrom-runtime-expained/'>
+<meta property='og:url' content='https://blog.garyyeap.com/code/babel-transfrom-runtime-expained/'>
 <meta property='og:site_name' content='Indecision'>
 <meta property='og:type' content='article'><meta property='article:section' content='code'><meta property='article:tag' content='javascript'><meta property='article:tag' content='babel'><meta property='article:tag' content='polyfill'><meta property='article:tag' content='es6'><meta property='article:tag' content='plugin-transform-runtime'><meta property='article:published_time' content='2021-04-29T00:00:00Z'/><meta property='article:modified_time' content='2021-04-29T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.82.1" />
 
   <title>寫扣: 詳解 @babel/plugin-transform-runtime • Indecision</title>
-  <link rel='canonical' href='https://blog.garyyeap.rocks/code/babel-transfrom-runtime-expained/'>
+  <link rel='canonical' href='https://blog.garyyeap.com/code/babel-transfrom-runtime-expained/'>
   
   
   <link rel='icon' href='/favicon.ico'>
@@ -103,6 +103,8 @@ if (!doNotTrack) {
       </li><li>
         <a href='/tags/es6/' style='font-size:1em'>es6</a>
       </li><li>
+        <a href='/tags/event-loop/' style='font-size:1em'>event loop</a>
+      </li><li>
         <a href='/tags/javascript/' style='font-size:2em'>javascript</a>
       </li><li>
         <a href='/tags/node/' style='font-size:1em'>node</a>
@@ -131,7 +133,7 @@ if (!doNotTrack) {
       </li><li>
         <a href='/tags/%E7%A5%9E%E8%A9%B1/' style='font-size:1em'>神話</a>
       </li><li>
-        <a href='/tags/%E7%A7%91%E5%B9%BB/' style='font-size:2em'>科幻</a>
+        <a href='/tags/%E7%A7%91%E5%B9%BB/' style='font-size:1.5em'>科幻</a>
       </li><li>
         <a href='/tags/%E7%A7%91%E6%99%AE/' style='font-size:1em'>科普</a>
       </li></ul>
@@ -191,7 +193,7 @@ if (!doNotTrack) {
 <header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'>寫扣: 詳解 @babel/plugin-transform-runtime</h1>
+      <h1 class='title'>詳解 @babel/plugin-transform-runtime</h1>
       
 
     </div>
@@ -444,7 +446,7 @@ if (!doNotTrack) {
 }
 </code></pre></div><p>參考： <a href="https://babeljs.io/docs/en/babel-plugin-transform-runtime">https://babeljs.io/docs/en/babel-plugin-transform-runtime</a></p>
 <h2 id="總結">總結</h2>
-<p>看到這裡可能有個疑問就是，到底那種方式比較好，基本上所有的方式都有其應用的場景，不然 babel 也不會生出那麼多種選項，畢竟沒有必要的話，大家都會比較傾向複雜度越低越好。關於使用情景，Rollp 官方的 babel-plugin 對 babalHelpers 的設定就有說明：</p>
+<p>看到這裡可能有個疑問就是，到底哪種方式比較好，基本上所有的方式都有其應用的場景，不然 babel 也不會生出那麼多種選項，畢竟沒有必要的話，大家都會比較傾向複雜度越低越好。關於使用情景，Rollup 官方的 babel-plugin 對 babalHelpers 的設定就有說明：</p>
 <blockquote>
 <ul>
 <li>&lsquo;runtime&rsquo; - you should use this especially when building libraries with Rollup. It has to be used in combination with @babel/plugin-transform-runtime and you should also specify @babel/runtime as dependency of your package. Don&rsquo;t forget to tell Rollup to treat the helpers imported from within the @babel/runtime module as external dependencies when bundling for cjs &amp; es formats. This can be accomplished via regex (external: [/@babel/runtime/]) or a function (external: id =&gt; id.includes('@babel/runtime')). It&rsquo;s important to not only specify external: ['@babel/runtime'] since the helpers are imported from nested paths (e.g @babel/runtime/helpers/get) and Rollup will only exclude modules that match strings exactly.</li>
@@ -453,7 +455,7 @@ if (!doNotTrack) {
 <li>&lsquo;inline&rsquo; - this is not recommended. Helpers will be inserted in each file using this option. This can cause serious code duplication. This is the default Babel behavior as Babel operates on isolated files - however, as Rollup is a bundler and is project-aware (and therefore likely operating across multiple input files), the default of this plugin is &ldquo;bundled&rdquo;.</li>
 </ul>
 </blockquote>
-<p>簡單來說如果是開發套件的話，比較建議用 <code>transform-runtime</code> 方式，如果是開發應用的話，建議用 Rollup 自己提供的 <code>bundled</code> 方式，基本上就是把所有 helpers 用成一份，我自己猜測理論上會在應用層加一個 scope 來保證只會套用/影響到應用層。以上就簡單說明，只是現實世界的具體情況會更複雜，之後會再寫一篇開發/載入模組時要注意跟可以優化的事項。</p>
+<p>簡單來說如果是開發套件的話，比較建議用 <code>transform-runtime</code> 方式，如果是開發應用的話，建議用 Rollup 自己提供的 <code>bundled</code> 方式，基本上就是把所有 <code>helpers</code> 用成一份，我自己猜測理論上會在應用層加一個 scope 來保證只會套用/影響到應用層。以上就簡單說明，只是現實世界的具體情況會更複雜，之後會再寫一篇開發/載入模組時要注意跟可以優化的事項。</p>
 
 </div>
 
@@ -483,8 +485,8 @@ if (!doNotTrack) {
 
 <nav class='entry-nav'>
   <div class='container'><div class='next-entry sep-before'>
-      <a href='/code/npm-development-test/'>
-        <span class='screen-reader-text'>下一篇文章: </span>NPM 開發測試筆記<span aria-hidden='true'>下一個 <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+      <a href='/code/reunderstanding-event-loop/'>
+        <span class='screen-reader-text'>下一篇文章: </span>重新理解 Event Loop<span aria-hidden='true'>下一個 <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
     
     
   <line x1="4" y1="12" x2="20" y2="12"/>
@@ -539,7 +541,7 @@ if (!doNotTrack) {
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2019-2023 Gary Yeap </p>
+  <p> &copy; 2019-2024 Gary Yeap </p>
 </div>
 
         </div>

@@ -1,75 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://blog.garyyeap.rocks/en/authors/</loc>
+    <loc>https://blog.garyyeap.com/en/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.garyyeap.rocks/zh/authors/"
+                href="https://blog.garyyeap.com/zh/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.garyyeap.rocks/en/authors/"
+                href="https://blog.garyyeap.com/en/authors/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/en/categories/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.garyyeap.rocks/zh/categories/"
+                href="https://blog.garyyeap.com/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.garyyeap.rocks/en/categories/"
+                href="https://blog.garyyeap.com/en/categories/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/en/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.garyyeap.rocks/zh/"
+                href="https://blog.garyyeap.com/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.garyyeap.rocks/en/"
+                href="https://blog.garyyeap.com/en/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/en/series/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.garyyeap.rocks/zh/series/"
+                href="https://blog.garyyeap.com/zh/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.garyyeap.rocks/en/series/"
+                href="https://blog.garyyeap.com/en/series/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/en/tags/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.garyyeap.rocks/zh/tags/"
+                href="https://blog.garyyeap.com/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.garyyeap.rocks/en/tags/"
+                href="https://blog.garyyeap.com/en/tags/"
                 />
   </url>
-  
 </urlset>

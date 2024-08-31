@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on Indecision</title>
+    <link>https://blog.garyyeap.com/zh/tags/javascript/</link>
+    <description>Recent content in javascript on Indecision</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.com/zh/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>重新理解 Event Loop</title>
+      <link>https://blog.garyyeap.com/zh/code/reunderstanding-event-loop/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/zh/code/reunderstanding-event-loop/</guid>
+      <description>前言 最近被問到 Microtask 和 Marcotask 時發現自己對 Event loop 的理解似乎不是很全面，找了網路上一些文章感覺講得也不是很全面，直到看到這個演講才算解惑:
+  這篇文章是我的理解和整理，因爲對 W3C 原文定義理解困難，所以這理解主要來源是上面的這個影片和其他講得不是那麼全面的文章，所以不一定全對就是。
+PS： 注意規範中沒有 Marcotask 這名詞，只有 Tasks，但大家好像都約定成俗的稱爲 Marcotask 作爲 Mircotask 的對比，下面跟隨習慣用 Mircotask。
+Event Loop 要理解 Event loop 首先要理解的是 Javascript 是個 single thread 語言，被設計成 single thread 原因很容易理解，主要是因爲 JS 其中一個主要功能的是對 DOM 做操作，如果有其它語言經驗的話，應該可以知道有 mulit threads/processes 的語言對文件的 IO 處理有多麻煩，不了解的可以去查一下 File lock between threads and processes 關鍵字。Event loop 則是爲了在 single thread 環境下模擬多工而設計出來的解決方案， single thread 的好處是可以讓寫程式變得比較簡單，壞處是只能同時做一件事，舉例來說就像超商只有一個店員，那個店員在微波食物食物時就只能呆等無法做結帳等其它事情，你可能會想不對啊，微波時把食物放進去定好時間後可以做其它事情啊，對，想像微波食物這件事就是一個 async 如 fetch 的工作，結帳是如 Dom 操作 sync 工作， 店員還是只有一個，但透過一些合理的安排他可以做到類似多工的效果，Event loop 就是設計來這種模擬多工成爲可能。</description>
+    </item>
+    
+    <item>
+      <title>NPM 開發測試筆記</title>
+      <link>https://blog.garyyeap.com/zh/code/npm-development-test/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/zh/code/npm-development-test/</guid>
+      <description>開發 NPM 套件時的測試方式，在開發的套件目錄下
+# yarn yarn link # npm npm link 這樣會建立一個 symbolic link 到套件的所有套件的目錄，要查看的話
+yarn
+cd ~/.config/yarn/link npm，列出設定，找 prefix
+npm config ls -l 拿到 prefix 後
+cd {prefix}/lib/node_modules 在想測試該套件的應用/套件目錄下
+# yarn yarn link &amp;lt;package name&amp;gt; # npm npm link &amp;lt;package name&amp;gt; 基本上就等於“安裝”完成了，可以開始測試，在開發的套件裡面做的改變會即時反應到想用來測試的應用/套件上
+測試完畢後，在測試的應用/套件上“解除安裝”
+# yarn yarn unlink &amp;lt;package name&amp;gt; # npm npm unlink &amp;lt;package name&amp;gt; 從 npm 主目錄上移除開發完畢的套件
+# yarn yarn unlink # npm npm unlink 如果想要在 global 環境測試，可以先確認套件是不是已經在 global 目錄</description>
+    </item>
+    
+    <item>
+      <title>詳解 @babel/plugin-transform-runtime</title>
+      <link>https://blog.garyyeap.com/zh/code/babel-transfrom-runtime-expained/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/zh/code/babel-transfrom-runtime-expained/</guid>
+      <description>@babel/plugin-transform-runtime 主要是要解決 Polyfill、Helper 和 Regenerator 編譯產生的一些問題，下面會逐一介紹和講解其解決的方法。
+Polyfill 有在寫網頁前端的人對這名詞應該都不陌生，如果你丟這個詞去查字典的話，它的解釋是某種填充材料，在 Polyfill 這個名詞出現以前有另一個名詞叫 Shim， 同樣如果去查字典的解釋是墊片，兩者之間有什麼不同呢？舉個例子，假如一面牆上破了一個洞，你用一塊板子釘上去蓋住它那就是 Shim，如果你用補土把它補好補滿那就是 Polyfill，差異在於前者你可以很明顯知道有個不一樣的外來物，後者你不會有感覺。換成程式碼的話，如果要解決不同瀏覽器處理 fullscreen api 差異的問題:
+Shim 形式(Source)：
+import Fullscreen from &amp;#39;easy-fullscreen&amp;#39;; if (Fullscreen.isEnabled) { fullscreenButton.onclick = function () { // check if is in fullscreen mode  if (Fullscreen.isFullscreen) { // exit fullscreen  Fullscreen.exit(); } else { // request to enter fullscreen  Fullscreen.request(fullscreenElement); } }; } Polyfill 形式：
+import &amp;#39;core-js&amp;#39;; if (document.documentElement.requestFullscreen) { fullscreenButton.onclick = function () { if (document.</description>
+    </item>
+    
+  </channel>
+</rss>

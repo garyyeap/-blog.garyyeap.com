@@ -15,18 +15,18 @@ Polyfill 有在寫網頁前端的人對這名詞應該都不陌生，如果你�
 Shim 形式(Source)：
 import Fullscreen from &#39;easy-fullscreen&#39;; if (Fullscreen.isEnabled) { fullscreenButton.onclick = function () { // check if is in fullscreen mode  if (Fullscreen.isFullscreen) { // exit fullscreen  Fullscreen.exit(); } else { // request to enter fullscreen  Fullscreen.request(fullscreenElement); } }; } Polyfill 形式：
 import &#39;core-js&#39;; if (document.documentElement.requestFullscreen) { fullscreenButton.onclick = function () { if (document.'>
-<meta property='og:url' content='https://blog.garyyeap.rocks/code/babel-polyfill-methods/'>
+<meta property='og:url' content='https://blog.garyyeap.com/zh/code/babel-transfrom-runtime-expained/'>
 <meta property='og:site_name' content='Indecision'>
 <meta property='og:type' content='article'><meta property='article:section' content='code'><meta property='article:tag' content='javascript'><meta property='article:tag' content='babel'><meta property='article:tag' content='polyfill'><meta property='article:tag' content='es6'><meta property='article:tag' content='plugin-transform-runtime'><meta property='article:published_time' content='2021-04-29T00:00:00Z'/><meta property='article:modified_time' content='2021-04-29T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.82.1" />
 
   <title>寫扣: 詳解 @babel/plugin-transform-runtime • Indecision</title>
-  <link rel='canonical' href='https://blog.garyyeap.rocks/code/babel-polyfill-methods/'>
+  <link rel='canonical' href='https://blog.garyyeap.com/zh/code/babel-transfrom-runtime-expained/'>
   
   
   <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><style>
+<link rel='stylesheet' href='/assets/css/main.b6d96371.css'><style>
 :root{--color-accent:#444444;}
 </style>
 
@@ -53,13 +53,13 @@ if (!doNotTrack) {
   <header>
     
     <div class='logo'>
-      <a href='/'>
+      <a href='/zh/'>
         <img src='/images/logo.png'>
       </a>
     </div>
     
     <h2 class='title site-title '>
-      <a href='/'>
+      <a href='/zh/'>
       Indecision
       </a>
     </h2>
@@ -84,9 +84,9 @@ if (!doNotTrack) {
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='側邊菜單'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/code/'>寫扣</a></li><li class='item'>
-  <a href='/wander/'>流浪</a></li><li class='item'>
-  <a href='/read/'>讀書</a></li></ul>
+  <a href='/zh/code/'>寫扣</a></li><li class='item'>
+  <a href='/zh/wander/'>流浪</a></li><li class='item'>
+  <a href='/zh/read/'>讀書</a></li></ul>
     </div>
   </nav>
 
@@ -97,27 +97,45 @@ if (!doNotTrack) {
 
   <div class='container list-container'>
   <ul class='list taxonomy-cloud'><li>
-        <a href='/tags/babel/' style='font-size:1em'>babel</a>
+        <a href='/zh/tags/babel/' style='font-size:1em'>babel</a>
       </li><li>
-        <a href='/tags/covid-19/' style='font-size:1em'>covid-19</a>
+        <a href='/zh/tags/covid-19/' style='font-size:1em'>covid-19</a>
       </li><li>
-        <a href='/tags/es6/' style='font-size:1em'>es6</a>
+        <a href='/zh/tags/es6/' style='font-size:1em'>es6</a>
       </li><li>
-        <a href='/tags/javascript/' style='font-size:1em'>javascript</a>
+        <a href='/zh/tags/event-loop/' style='font-size:1em'>event loop</a>
       </li><li>
-        <a href='/tags/plugin-transform-runtime/' style='font-size:1em'>plugin-transform-runtime</a>
+        <a href='/zh/tags/javascript/' style='font-size:2em'>javascript</a>
       </li><li>
-        <a href='/tags/polyfill/' style='font-size:1em'>polyfill</a>
+        <a href='/zh/tags/node/' style='font-size:1em'>node</a>
       </li><li>
-        <a href='/tags/%E5%8F%8D%E7%83%8F%E6%89%98%E9%82%A6/' style='font-size:1em'>反烏托邦</a>
+        <a href='/zh/tags/npm/' style='font-size:1em'>npm</a>
       </li><li>
-        <a href='/tags/%E6%AD%B7%E5%8F%B2/' style='font-size:1em'>歷史</a>
+        <a href='/zh/tags/plugin-transform-runtime/' style='font-size:1em'>plugin-transform-runtime</a>
       </li><li>
-        <a href='/tags/%E7%96%AB%E6%83%85/' style='font-size:1em'>疫情</a>
+        <a href='/zh/tags/polyfill/' style='font-size:1em'>polyfill</a>
       </li><li>
-        <a href='/tags/%E7%A5%9E%E8%A9%B1/' style='font-size:1em'>神話</a>
+        <a href='/zh/tags/%E5%87%BA%E7%A7%9F%E5%A4%A7%E5%8F%94/' style='font-size:1em'>出租大叔</a>
       </li><li>
-        <a href='/tags/%E7%A7%91%E5%B9%BB/' style='font-size:2em'>科幻</a>
+        <a href='/zh/tags/%E5%8F%8D%E7%83%8F%E6%89%98%E9%82%A6/' style='font-size:1em'>反烏托邦</a>
+      </li><li>
+        <a href='/zh/tags/%E5%9C%B0%E7%90%83%E7%A7%91%E5%AD%B8/' style='font-size:1em'>地球科學</a>
+      </li><li>
+        <a href='/zh/tags/%E5%9C%B0%E8%B3%AA%E5%AD%B8/' style='font-size:1em'>地質學</a>
+      </li><li>
+        <a href='/zh/tags/%E5%B0%91%E5%AD%90%E5%8C%96/' style='font-size:1em'>少子化</a>
+      </li><li>
+        <a href='/zh/tags/%E6%AD%B7%E5%8F%B2/' style='font-size:1em'>歷史</a>
+      </li><li>
+        <a href='/zh/tags/%E6%B0%A3%E5%80%99%E8%AE%8A%E9%81%B7/' style='font-size:1em'>氣候變遷</a>
+      </li><li>
+        <a href='/zh/tags/%E7%96%AB%E6%83%85/' style='font-size:1em'>疫情</a>
+      </li><li>
+        <a href='/zh/tags/%E7%A5%9E%E8%A9%B1/' style='font-size:1em'>神話</a>
+      </li><li>
+        <a href='/zh/tags/%E7%A7%91%E5%B9%BB/' style='font-size:1.5em'>科幻</a>
+      </li><li>
+        <a href='/zh/tags/%E7%A7%91%E6%99%AE/' style='font-size:1em'>科普</a>
       </li></ul>
 </div>
 
@@ -161,7 +179,7 @@ if (!doNotTrack) {
     <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
   <section class='widget widget-breadcrumbs sep-after'>
     <nav id='breadcrumbs'>
-      <ol><li><a href='/'>主頁</a></li><li><a href='/code/'>寫扣</a></li><li><span>詳解 @babel/plugin-transform-runtime</span></li></ol>
+      <ol><li><a href='/zh/'>主頁</a></li><li><a href='/zh/code/'>寫扣</a></li><li><span>詳解 @babel/plugin-transform-runtime</span></li></ol>
     </nav>
   </section></div>
       </div>
@@ -175,7 +193,7 @@ if (!doNotTrack) {
 <header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'>寫扣: 詳解 @babel/plugin-transform-runtime</h1>
+      <h1 class='title'>詳解 @babel/plugin-transform-runtime</h1>
       
 
     </div>
@@ -202,7 +220,7 @@ if (!doNotTrack) {
   <polyline points="12 6 12 12 15 15"/>
 
 </svg>
-需要3分鐘讀完
+需要4分鐘讀完
 </span>
 
 
@@ -254,7 +272,7 @@ if (!doNotTrack) {
 
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sym</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Symbol</span>();
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">promise</span> <span style="color:#f92672">=</span> Promise.<span style="color:#a6e22e">resolve</span>();
-</code></pre></div><p>原理相當簡單，就是在檔案的一開頭手動把所有 Polyfill 全部載進來，因爲是全局的，基本上只要其中一個檔案有用就好了，慣例做法就是在 entry 檔案裡 import。上述範例的做法問題就是會載入一堆專案/檔案根本沒用到的 Polyfill，於是 core-js 就提供了較進階的用法</p>
+</code></pre></div><p>原理相當簡單，就是在檔案的一開頭手動把所有 Polyfill 全部載進來，因爲是全局的，基本上只要其中一個檔案有載入就好了，慣例做法就是在 entry 檔案裡 import。上述範例的做法問題就是會載入一堆專案/檔案根本沒用到的 Polyfill，於是 core-js 就提供了較進階的用法</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;core-js/es/symbol&#39;</span>;
 <span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;core-js/es/promise&#39;</span>;
 
@@ -320,9 +338,8 @@ if (!doNotTrack) {
 <li><a href="https://babeljs.io/docs/en/babel-plugin-transform-runtime">https://babeljs.io/docs/en/babel-plugin-transform-runtime</a></li>
 </ol>
 <h2 id="helper">Helper</h2>
-<p>Helper 基本上就是 Babel 爲了要達成 ES6 的一些語法支援而產生的一些程式，例如 Class</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">abc</span>() {
-}
+<p>Helper 基本上就是 Babel 爲了要達成 ES6 的一些語法支援而產生的一些程式，例如 async function</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">abc</span>() {}
 </code></pre></div><p>會轉成</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#e6db74">&#34;use strict&#34;</span>;
 
@@ -348,7 +365,7 @@ if (!doNotTrack) {
   }));
   <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_abc</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">arguments</span>);
 }
-</code></pre></div><p>其中 <code>_classCallCheck</code> 就是 helper，它負責把 Person 這個 function 改成有像 class 一樣的特性/行爲，但這樣的問題是 <code>_classCallCheck</code> 這個函數在每個用到它的模組都會有一份重複的。這時候 <code>babel-plugin-transform-runtime</code> 又要來支援了，在加入後(參考上面)，<code>transform-runtime</code> 會把上述</p>
+</code></pre></div><p>其中 <code>_asyncToGenerator</code> 就是 helper，它負責把 abc 這個 function 改成有像 async 一樣的特性/行爲，但這樣的問題是 <code>_asyncToGenerator</code> 這個函數在每個用到它的模組都會有一份重複的。這時候 <code>babel-plugin-transform-runtime</code> 又要來支援了，在加入後(參考上面Polyfill部分設定)，<code>transform-runtime</code> 會把上述程式碼轉換成引入的方式就可以有效減少重複的程式碼</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#e6db74">&#34;use strict&#34;</span>;
 
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">_interopRequireDefault</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;@babel/runtime/helpers/interopRequireDefault&#34;</span>);
@@ -376,6 +393,69 @@ if (!doNotTrack) {
   <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_abc</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">arguments</span>);
 }
 </code></pre></div><p>參考：<a href="https://babeljs.io/docs/en/babel-plugin-transform-runtime">https://babeljs.io/docs/en/babel-plugin-transform-runtime</a></p>
+<h2 id="regenerator">Regenerator</h2>
+<p>這個不想介紹了，請直接參考 MDN。Regenerator 要處理的問題是污染全域的問題</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">foo</span>() {}
+</code></pre></div><p>會產生</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#e6db74">&#34;use strict&#34;</span>;
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">_marked</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">foo</span>].<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">regeneratorRuntime</span>.<span style="color:#a6e22e">mark</span>);
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">foo</span>() {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">regeneratorRuntime</span>.<span style="color:#a6e22e">wrap</span>(
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">foo$</span>(<span style="color:#a6e22e">_context</span>) {
+      <span style="color:#66d9ef">while</span> (<span style="color:#ae81ff">1</span>) {
+        <span style="color:#66d9ef">switch</span> ((<span style="color:#a6e22e">_context</span>.<span style="color:#a6e22e">prev</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_context</span>.<span style="color:#a6e22e">next</span>)) {
+          <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span>
+          <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;end&#34;</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_context</span>.<span style="color:#a6e22e">stop</span>();
+        }
+      }
+    },
+    <span style="color:#a6e22e">_marked</span>[<span style="color:#ae81ff">0</span>],
+    <span style="color:#66d9ef">this</span>
+  );
+}
+</code></pre></div><p>但因爲 <code>regeneratorRuntime</code> 是全域變數，所以會被污染，用了 <code>tranfrom-runtime</code> 後會變成不會污染全域變數的方式</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#e6db74">&#34;use strict&#34;</span>;
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">_regenerator</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;@babel/runtime/regenerator&#34;</span>);
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">_regenerator2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_interopRequireDefault</span>(<span style="color:#a6e22e">_regenerator</span>);
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">_interopRequireDefault</span>(<span style="color:#a6e22e">obj</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">__esModule</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">:</span> { <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">obj</span> };
+}
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">_marked</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">foo</span>].<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">_regenerator2</span>.<span style="color:#66d9ef">default</span>.<span style="color:#a6e22e">mark</span>);
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">foo</span>() {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_regenerator2</span>.<span style="color:#66d9ef">default</span>.<span style="color:#a6e22e">wrap</span>(
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">foo$</span>(<span style="color:#a6e22e">_context</span>) {
+      <span style="color:#66d9ef">while</span> (<span style="color:#ae81ff">1</span>) {
+        <span style="color:#66d9ef">switch</span> ((<span style="color:#a6e22e">_context</span>.<span style="color:#a6e22e">prev</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_context</span>.<span style="color:#a6e22e">next</span>)) {
+          <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span>
+          <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;end&#34;</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">_context</span>.<span style="color:#a6e22e">stop</span>();
+        }
+      }
+    },
+    <span style="color:#a6e22e">_marked</span>[<span style="color:#ae81ff">0</span>],
+    <span style="color:#66d9ef">this</span>
+  );
+}
+</code></pre></div><p>參考： <a href="https://babeljs.io/docs/en/babel-plugin-transform-runtime">https://babeljs.io/docs/en/babel-plugin-transform-runtime</a></p>
+<h2 id="總結">總結</h2>
+<p>看到這裡可能有個疑問就是，到底哪種方式比較好，基本上所有的方式都有其應用的場景，不然 babel 也不會生出那麼多種選項，畢竟沒有必要的話，大家都會比較傾向複雜度越低越好。關於使用情景，Rollup 官方的 babel-plugin 對 babalHelpers 的設定就有說明：</p>
+<blockquote>
+<ul>
+<li>&lsquo;runtime&rsquo; - you should use this especially when building libraries with Rollup. It has to be used in combination with @babel/plugin-transform-runtime and you should also specify @babel/runtime as dependency of your package. Don&rsquo;t forget to tell Rollup to treat the helpers imported from within the @babel/runtime module as external dependencies when bundling for cjs &amp; es formats. This can be accomplished via regex (external: [/@babel/runtime/]) or a function (external: id =&gt; id.includes('@babel/runtime')). It&rsquo;s important to not only specify external: ['@babel/runtime'] since the helpers are imported from nested paths (e.g @babel/runtime/helpers/get) and Rollup will only exclude modules that match strings exactly.</li>
+<li>&lsquo;bundled&rsquo; - you should use this if you want your resulting bundle to contain those helpers (at most one copy of each). Useful especially if you bundle an application code.</li>
+<li>&lsquo;external&rsquo; - use this only if you know what you are doing. It will reference helpers on global babelHelpers object. Used in combination with @babel/plugin-external-helpers.</li>
+<li>&lsquo;inline&rsquo; - this is not recommended. Helpers will be inserted in each file using this option. This can cause serious code duplication. This is the default Babel behavior as Babel operates on isolated files - however, as Rollup is a bundler and is project-aware (and therefore likely operating across multiple input files), the default of this plugin is &ldquo;bundled&rdquo;.</li>
+</ul>
+</blockquote>
+<p>簡單來說如果是開發套件的話，比較建議用 <code>transform-runtime</code> 方式，如果是開發應用的話，建議用 Rollup 自己提供的 <code>bundled</code> 方式，基本上就是把所有 <code>helpers</code> 用成一份，我自己猜測理論上會在應用層加一個 scope 來保證只會套用/影響到應用層。以上就簡單說明，只是現實世界的具體情況會更複雜，之後會再寫一篇開發/載入模組時要注意跟可以優化的事項。</p>
 
 </div>
 
@@ -387,7 +467,7 @@ if (!doNotTrack) {
     <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
 
 </svg>
-<span class='screen-reader-text'>分類: </span><a class='category' href='/categories/%E5%AF%AB%E6%89%A3/'>寫扣</a></div>
+<span class='screen-reader-text'>分類: </span><a class='category' href='/zh/categories/%E5%AF%AB%E6%89%A3/'>寫扣</a></div>
 <div class='tags'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
     
     
@@ -395,13 +475,28 @@ if (!doNotTrack) {
   <line x1="7" y1="7" x2="7" y2="7"/>
 
 </svg>
-<span class='screen-reader-text'>標籤: </span><a class='tag' href='/tags/javascript/'>javascript</a>, <a class='tag' href='/tags/babel/'>babel</a>, <a class='tag' href='/tags/polyfill/'>polyfill</a>, <a class='tag' href='/tags/es6/'>es6</a>, <a class='tag' href='/tags/plugin-transform-runtime/'>plugin-transform-runtime</a></div>
+<span class='screen-reader-text'>標籤: </span><a class='tag' href='/zh/tags/javascript/'>javascript</a>, <a class='tag' href='/zh/tags/babel/'>babel</a>, <a class='tag' href='/zh/tags/polyfill/'>polyfill</a>, <a class='tag' href='/zh/tags/es6/'>es6</a>, <a class='tag' href='/zh/tags/plugin-transform-runtime/'>plugin-transform-runtime</a></div>
 
   </div>
 </footer>
 
 
 </article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='next-entry sep-before'>
+      <a href='/zh/code/npm-development-test/'>
+        <span class='screen-reader-text'>下一篇文章: </span>NPM 開發測試筆記<span aria-hidden='true'>下一個 <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
 
 
 
@@ -446,7 +541,7 @@ if (!doNotTrack) {
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2019-2021 Gary Yeap </p>
+  <p> <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> 2019-2024 Gary Yeap </p>
 </div>
 
         </div>
@@ -455,7 +550,7 @@ if (!doNotTrack) {
     </div>
   </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.c3bcf2df.js'></script>
+<script src='/assets/js/main.5f629e73.js'></script>
 
 </body>
 

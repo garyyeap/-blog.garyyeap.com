@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Indecision</title>
-    <link>https://blog.garyyeap.rocks/</link>
+    <link>https://blog.garyyeap.com/</link>
     <description>Recent content on Indecision</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.rocks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NPM 開發測試筆記</title>
-      <link>https://blog.garyyeap.rocks/code/npm-development-test/</link>
+      <link>https://blog.garyyeap.com/code/npm-development-test/</link>
       <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/code/npm-development-test/</guid>
+      <guid>https://blog.garyyeap.com/code/npm-development-test/</guid>
       <description>開發 NPM 套件時的測試方式，在開發的套件目錄下
 # yarn yarn link # npm npm link 這樣會建立一個 symbolic link 到套件的所有套件的目錄，要查看的話
 yarn
@@ -25,11 +25,24 @@ cd {prefix}/lib/node_modules 在想測試該套件的應用/套件目錄下
     </item>
     
     <item>
+      <title>重新理解 Event Loop</title>
+      <link>https://blog.garyyeap.com/code/reunderstanding-event-loop/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/code/reunderstanding-event-loop/</guid>
+      <description>前言 最近被問到 microtask 和 marcotask 時發現自己對 Event loop 的理解似乎不是很全面，找了網路上一些文章感覺講得也不是很全面，直到看到這個演講才算解惑:
+  這篇文章是我的理解和整理，因爲對 W3C 原文定義理解困難，所以這理解主要來源是上面的這個影片，還有其他講得不是那麼全面的文章，所以不一定全對就是。
+Single thread 要理解 Event loop 首先要理解的是 Javascript 是個 single thread 語言，被設計成 single thread 原因很容易理解，主要是因爲 JS 其中一個主要功能的是對 DOM 做操作，如果有其它語言經驗的話，應該可以知道有 mulit threads/processes 的語言對文件的 IO 處理有多麻煩，不了解的可以去查一下 File lock between threads and processes 關鍵字。Event loop 則是爲了在 single thread 環境下模擬多工而設計出來的解決方案， single thread 的好處是可以讓寫程式變得比較簡單，壞處是只能同時做一件事，舉例來說就像超商只有一個店員，那個店員在微波食物食物時就只能呆等無法做結帳等其它事情，你可能會想不對啊，微波時把食物放進去定好時間後可以做其它事情啊，對，想像微波食物這件事就是一個 async 如 fetch 的工作，結帳是如 Dom 操作 sync 工作， 店員還是只有一個，但透過一些合理的安排他可以做到類似多工的效果，Event loop 就是設計來這種模擬多工成爲可能。
+要理解 Event loop 是怎麼設計的首先要先理解瀏覽器是怎麼運作的，瀏覽器顯示畫面的步驟如下圖： (Source)
+這邊要注意的就只有第一個步驟，也就是 Javascript，其它的需要另開文章才能講完，以下會把其餘步驟簡稱爲 Rendering。Event loop 說穿了就是把工作碎片化，主要是不要被不是 JS 做的工作擋住，例如下載等其實是讓瀏覽器的其它 Thread 做的，所以在趁下載時 JS 就可以做其它工作，而不是一直再等其它 Thread 做完才能動，但是這是假多工，所以如果當其中一個 task 耗費太多資源時(例如無限迴圈)還是會擋住其它工作。Javascript 具體運作的內容則如下圖 (原創 CC 授權)：</description>
+    </item>
+    
+    <item>
       <title>出租大叔日記</title>
-      <link>https://blog.garyyeap.rocks/read/diary-of-uncle-for-rental/</link>
+      <link>https://blog.garyyeap.com/read/diary-of-uncle-for-rental/</link>
       <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/read/diary-of-uncle-for-rental/</guid>
+      <guid>https://blog.garyyeap.com/read/diary-of-uncle-for-rental/</guid>
       <description>雖說知道這個「行業」已經許久，但一直以爲跟漫畫或遊戲看過的一樣就只是做雜事的工作，結果在誠品翻了一下後發現不是那麼回事，大家似乎都把他當成傾訴的對象XD，而且內容看起來算有趣價格也還算便宜，所以就把它買下來直接在誠品咖啡廳直接看完了，這算我第一本在同一天內做到從買+看完的書，而且還在兩小時內，相信這記錄之後應該不太好破QQ。
 首先要說的是，本書的頁數和內容其實算少，就如上面說的大概兩個小時內可以看完，而內文有提到大叔在當時至少接了900多個委託，結果只生出14篇故事？然後感覺還有點硬湊頁數的感覺？可以合理懷疑這工作搞不好沒有像書中說的那麼有趣？但也有可能是作者太忙沒時間整理？
 下面開始劇透區塊，不想看的可以跳過直接看再下面，但其實我覺得類似的書看原文敘述跟一些細節比較能帶出那種感覺，有無劇透感覺不是很重要就是了，所以要不要看就自己斟酌吧。
@@ -45,10 +58,10 @@ cd {prefix}/lib/node_modules 在想測試該套件的應用/套件目錄下
     
     <item>
       <title>地質學家的記時錄</title>
-      <link>https://blog.garyyeap.rocks/read/timefulness/</link>
+      <link>https://blog.garyyeap.com/read/timefulness/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/read/timefulness/</guid>
+      <guid>https://blog.garyyeap.com/read/timefulness/</guid>
       <description>買的時候沒有注意到副標題，以爲是純地質學的科普書，後來才發現內容有涵蓋了氣候變遷，幸好篇幅不大，主要內容還是用地質學來訴說地球歷史
 首先要說的是作者對於自己非自己專業領域感覺上有不懂裝懂的嫌疑，例如有一段：
  如今可以一笑置之的的「Y2K」危機，在千禧年之交可是有癱瘓全球電腦系統及世界經濟之虞。而危機的成因在於，一九六〇，七〇年代的程式設計師顯然真的不認爲西元二千年會有到來的這一天。
@@ -64,10 +77,10 @@ cd {prefix}/lib/node_modules 在想測試該套件的應用/套件目錄下
     
     <item>
       <title>2021 疫情期間回馬來西亞經驗心得</title>
-      <link>https://blog.garyyeap.rocks/wander/back-to-malaysia-during-covid-19/</link>
+      <link>https://blog.garyyeap.com/wander/back-to-malaysia-during-covid-19/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/wander/back-to-malaysia-during-covid-19/</guid>
+      <guid>https://blog.garyyeap.com/wander/back-to-malaysia-during-covid-19/</guid>
       <description>請注意這篇分享是個人的入境經驗，實際情況會因各州政府及當時情況而有所不同
 在回去前在網路上查詢了很多資訊，發現某些資訊都已經是去年的，然後各個政府部門好像又各自爲政，資訊空間時間都很分散，不知道要以哪個作準，想說來整理一下方便其他人參考
 可以先參考這份倫敦大使館備用的文件，雖說資訊有點落後了: https://drive.google.com/file/d/1_Vn9LQuwmnfGkX-6Xic6cEDMmocdycfy/view
@@ -80,10 +93,10 @@ cd {prefix}/lib/node_modules 在想測試該套件的應用/套件目錄下
     
     <item>
       <title>詳解 @babel/plugin-transform-runtime</title>
-      <link>https://blog.garyyeap.rocks/code/babel-transfrom-runtime-expained/</link>
+      <link>https://blog.garyyeap.com/code/babel-transfrom-runtime-expained/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/code/babel-transfrom-runtime-expained/</guid>
+      <guid>https://blog.garyyeap.com/code/babel-transfrom-runtime-expained/</guid>
       <description>@babel/plugin-transform-runtime 主要是要解決 Polyfill、Helper 和 Regenerator 編譯產生的一些問題，下面會逐一介紹和講解其解決的方法。
 Polyfill 有在寫網頁前端的人對這名詞應該都不陌生，如果你丟這個詞去查字典的話，它的解釋是某種填充材料，在 Polyfill 這個名詞出現以前有另一個名詞叫 Shim， 同樣如果去查字典的解釋是墊片，兩者之間有什麼不同呢？舉個例子，假如一面牆上破了一個洞，你用一塊板子釘上去蓋住它那就是 Shim，如果你用補土把它補好補滿那就是 Polyfill，差異在於前者你可以很明顯知道有個不一樣的外來物，後者你不會有感覺。換成程式碼的話，如果要解決不同瀏覽器處理 fullscreen api 差異的問題:
 Shim 形式(Source)：
@@ -93,10 +106,10 @@ import &amp;#39;core-js&amp;#39;; if (document.documentElement.requestFullscreen
     
     <item>
       <title>美麗新世界</title>
-      <link>https://blog.garyyeap.rocks/read/brave-new-world/</link>
+      <link>https://blog.garyyeap.com/read/brave-new-world/</link>
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/read/brave-new-world/</guid>
+      <guid>https://blog.garyyeap.com/read/brave-new-world/</guid>
       <description>這本被稱爲世界三大反烏托邦之一的書對我來說卻不怎麼反烏托邦，反而比較像在探討價值觀衝突，應該說作者本人的確是想傳達反烏托邦的概念，這本書出版年份是1933年，離世界共產黨、蘇聯的成立並沒有很久，而且作者是個老右派，在那個年代這的確是本反共(反烏托邦)的書, 但以現代的觀點來看，我個人覺得反而比較像在反反烏托邦。書中開始描述了該「烏托邦」在人出生以前就已經安排好其在社會中該擔當的位置階級，描述情況確實比較極端，但回頭來看現代社會在資本主義發展到這階段，貧富差距階級固化/世襲現象難道就跟書中描述的有很大差別？差別就在於書中的做法已經是制度化把流動的機率降到儘可能的小，而我們所處的世界還是基於因爲「自由市場」而還容許部分例外，但越是發展成熟的國家，流動率就越顯著減少，再發展下去要達到書中的程度應該不會是問題，當然即便達到那種程度，還是有差別，一是書中的固化是管理者的刻意爲之，鍋是管理者要背，而現代社會的固化是整個社會有意無意的促成，鍋要整個社會背；二是書中的人階級雖然都被安排了，但因爲有經過刻意的「訓練」，被安排的人思想上其實不會有相對剝削感，就像古代百姓看到皇帝會自認奴才一樣覺得天經地義，而且爲了整體社會的穩定，管理者也安排相對應的娛樂方式，要說的話，書中即便是最基礎的階級，其實生活過得基本上比現代的一堆中產還要好和快樂多了，衣食住行都不缺，截自書中的一段話：
  「可怕？他們並不覺得。相反的，他們喜歡。那是輕鬆的，像孩子的工作一樣單純。心力體力都不須緊張。七個半鐘頭溫和的勞動，然後是蘇麻分配和種種運動與遊戲，以及沒有限制的交媾和感覺電影。他們還能更有什麼要求？」
  整本書我覺得最有意思的一部分大概就是管理者和野蠻人最後的對話了，野蠻人因爲看了莎士比亞而不斷的在追求善與美，但以管理者的理論來說善與美是不必要的，他們其實是相對的，因爲有惡才會有善的存在，如果世界上沒有惡霸，沒有不公，那就不需要英雄的存在：
@@ -108,10 +121,10 @@ import &amp;#39;core-js&amp;#39;; if (document.documentElement.requestFullscreen
     
     <item>
       <title>大話山海經</title>
-      <link>https://blog.garyyeap.rocks/read/talk-big-of-mountains-and-seas/</link>
+      <link>https://blog.garyyeap.com/read/talk-big-of-mountains-and-seas/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/read/talk-big-of-mountains-and-seas/</guid>
+      <guid>https://blog.garyyeap.com/read/talk-big-of-mountains-and-seas/</guid>
       <description>以山海經爲背景的小說其實真的不多，這系列就真的是少數值得一看的。因爲山海經基本上就是個設定集，而且又像聖經一樣在長時期由多位不可考的作者補上去的，所以既零散又有部分互相衝突，如果要把它寫成故事就要想個可以把它們整合又可以自圓其說的方法，這方面《大話山海經》其實做得還不錯，融入了一些現代的觀念來解釋一些設定，尤其是架構世界觀的部分，很好的解釋了崑崙衆神的消失和後來其他神出現的原因，也有其他非中原地區的神來客串，其中我覺得比較牽強的大概是爲什麼夸父要追日的部份，還有神的後代的設定用得太氾濫滿滿希臘神話的影子，除此之外讓人感覺一再強調崑崙衆神的自助餐也讓我摸不清到底是想要表達什麼，然後最後可能急着收尾，神的強度設定也有點亂了套，本來高高在上很強的神居然可以被人類打趴，而且一些寶物本來只能用來對付妖，到最後居然連神也可以對付了(雖然是外來的神就是了)。
 整個系列來說架構算嚴謹，除了例如莫奈何後期爲何可以一直拿到新的飛車沒解釋，靈魂收集者中明明設定人類走路速度很慢，主角一行人是靠神的幫助才趕上妖，但後來的其他人類居然也追上來也沒解釋等等的小漏洞之外，印象中沒什麼挖出什麼填不了的大坑，但大概也是作者宣稱採用分部但又各自獨立不需要順序看的寫法有關，因爲這種手法還真的不容易埋什麼坑，雖說如此，但整個系列看下來覺得還是需要依照順序看會比較好，例如說先看了第七部伏魔者聯盟再去看追日神探的話，大概會有被劇透的感覺，然後如果先看了追日神探又沒看伏魔者聯盟的話，其實就不算看完整個故事，感覺差很多，類似但影響沒追日神探那麼大的情況其實不少，就這一點來說談不上各自獨立，而且作者爲了達到這個目的幾乎每部都要一再介紹各個角色的背景，內容不是幾乎，而是根本複製貼上，反而造成了累贅。
 這系列另一個特點就是採用了作者稱爲「空拍機」的敘述法(發明者爲巴爾扎克)，也就是沒有特定主角，「空拍機」鏡頭掃到哪主角就是誰，坦白說這技巧用得還不錯，但要說創新嘛，其實其他的小說如《天龍八部》和《海伯利昂》都用了類似的手法，只是《大話山海經》主角群人數更多拆得更散而已(而且很明顯莫奈何就是真主角啊)，也就因爲如此導致故事長度/深度受到限制，無法像前兩者一樣寫成准史詩般的篇幅，這也是頗爲可惜的一點，但如果真的寫長了還會不會如此好看也很難說就是了。
@@ -120,10 +133,10 @@ import &amp;#39;core-js&amp;#39;; if (document.documentElement.requestFullscreen
     
     <item>
       <title>失控的進步 — 復活節島的最後一棵樹是怎樣倒下的</title>
-      <link>https://blog.garyyeap.rocks/read/a-short-history-of-progress/</link>
+      <link>https://blog.garyyeap.com/read/a-short-history-of-progress/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/read/a-short-history-of-progress/</guid>
+      <guid>https://blog.garyyeap.com/read/a-short-history-of-progress/</guid>
       <description>我們來自何處？我們是誰？我們要往何處去？ — Paul Gauguin
  從創世紀到進化論，從迷信到體認到自己曾經是猿人的事實，到尼安德特人滅絕智人崛起，第一章作者帶我們認識了自己的過去。
  你無法想像一群人取代另一群人時，沒有使用暴力 — Milford Wolpoff
@@ -145,10 +158,10 @@ import &amp;#39;core-js&amp;#39;; if (document.documentElement.requestFullscreen
     
     <item>
       <title>虐殺器官</title>
-      <link>https://blog.garyyeap.rocks/read/genocidal-organ/</link>
+      <link>https://blog.garyyeap.com/read/genocidal-organ/</link>
       <pubDate>Mon, 13 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/read/genocidal-organ/</guid>
+      <guid>https://blog.garyyeap.com/read/genocidal-organ/</guid>
       <description>看來是出名的書，作者的成名作，網路上找到的書評都是正面的。最近應該是電影剛上映(看完書才知道)，誠品把它擺在很顯眼的地方，然後我手就滑惹，我自己感覺是算不上雷書，只是也沒什麼驚艷感就是了，有收藏癖的我看完後沒多久就決定賣掉…
   劇情其實很簡單，簡介大概可能都講完了，背景是發生在 911事件之後的近未來(畢竟是快10前的作品了)，主角是個特種部隊成員，在追殺著一個被懷疑是最近世界各國內戰/大屠殺的始作俑者。
 以下有雷 先說優點，作為一部科幻小說，最重要的巧思其實還是有的

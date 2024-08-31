@@ -1,128 +1,176 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://blog.garyyeap.rocks/zh/read/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/categories/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+    <loc>https://blog.garyyeap.com/zh/code/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/read/</loc>
+    <lastmod>2022-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/wander/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/categories/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.garyyeap.rocks/en/categories/"
+                href="https://blog.garyyeap.com/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.garyyeap.rocks/zh/categories/"
+                href="https://blog.garyyeap.com/zh/categories/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/event-loop/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.garyyeap.rocks/en/"
+                href="https://blog.garyyeap.com/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.garyyeap.rocks/zh/"
+                href="https://blog.garyyeap.com/zh/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/tags/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/javascript/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.garyyeap.rocks/en/tags/"
+                href="https://blog.garyyeap.com/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.garyyeap.rocks/zh/tags/"
+                href="https://blog.garyyeap.com/zh/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/tags/%E5%8F%8D%E7%83%8F%E6%89%98%E9%82%A6/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/categories/%E5%AF%AB%E6%89%A3/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/code/reunderstanding-event-loop/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/node/</loc>
+    <lastmod>2023-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/npm/</loc>
+    <lastmod>2023-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/code/npm-development-test/</loc>
+    <lastmod>2023-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E5%87%BA%E7%A7%9F%E5%A4%A7%E5%8F%94/</loc>
+    <lastmod>2022-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/read/diary-of-uncle-for-rental/</loc>
+    <lastmod>2022-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E5%B0%91%E5%AD%90%E5%8C%96/</loc>
+    <lastmod>2022-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/categories/%E8%AE%80%E6%9B%B8/</loc>
+    <lastmod>2022-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E5%9C%B0%E7%90%83%E7%A7%91%E5%AD%B8/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E5%9C%B0%E8%B3%AA%E5%AD%B8/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/read/timefulness/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E6%B0%A3%E5%80%99%E8%AE%8A%E9%81%B7/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E7%A7%91%E6%99%AE/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/wander/back-to-malaysia-during-covid-19/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/babel/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/covid-19/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/es6/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/plugin-transform-runtime/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/polyfill/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/categories/%E6%B5%81%E6%B5%AA/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E7%96%AB%E6%83%85/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/code/babel-transfrom-runtime-expained/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E5%8F%8D%E7%83%8F%E6%89%98%E9%82%A6/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/tags/%E7%A7%91%E5%B9%BB/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E7%A7%91%E5%B9%BB/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/categories/%E8%AE%80%E6%9B%B8/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/read/brave-new-world/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/read/brave-new-world/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/tags/%E7%A5%9E%E8%A9%B1/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/read/talk-big-of-mountains-and-seas/</loc>
     <lastmod>2020-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/read/talk-big-of-mountains-and-seas/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E7%A5%9E%E8%A9%B1/</loc>
     <lastmod>2020-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/tags/%E6%AD%B7%E5%8F%B2/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/read/a-short-history-of-progress/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/read/a-short-history-of-progress/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/tags/%E6%AD%B7%E5%8F%B2/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/read/genocidal-organ/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/read/genocidal-organ/</loc>
     <lastmod>2017-03-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/authors/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.garyyeap.rocks/en/authors/"
+                href="https://blog.garyyeap.com/en/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.garyyeap.rocks/zh/authors/"
+                href="https://blog.garyyeap.com/zh/authors/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://blog.garyyeap.rocks/zh/series/</loc>
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.garyyeap.rocks/en/series/"
+                href="https://blog.garyyeap.com/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.garyyeap.rocks/zh/series/"
+                href="https://blog.garyyeap.com/zh/series/"
                 />
   </url>
-  
 </urlset>

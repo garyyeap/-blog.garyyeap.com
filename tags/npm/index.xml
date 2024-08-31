@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>npm on Indecision</title>
-    <link>https://blog.garyyeap.rocks/tags/npm/</link>
+    <link>https://blog.garyyeap.com/tags/npm/</link>
     <description>Recent content in npm on Indecision</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.rocks/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.com/tags/npm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NPM 開發測試筆記</title>
-      <link>https://blog.garyyeap.rocks/code/npm-development-test/</link>
+      <link>https://blog.garyyeap.com/code/npm-development-test/</link>
       <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/code/npm-development-test/</guid>
+      <guid>https://blog.garyyeap.com/code/npm-development-test/</guid>
       <description>開發 NPM 套件時的測試方式，在開發的套件目錄下
 # yarn yarn link # npm npm link 這樣會建立一個 symbolic link 到套件的所有套件的目錄，要查看的話
 yarn

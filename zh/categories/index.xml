@@ -2,20 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Indecision</title>
-    <link>https://blog.garyyeap.rocks/zh/categories/</link>
+    <link>https://blog.garyyeap.com/zh/categories/</link>
     <description>Recent content in Categories on Indecision</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.garyyeap.rocks/zh/categories/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.com/zh/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>寫扣</title>
+      <link>https://blog.garyyeap.com/zh/categories/%E5%AF%AB%E6%89%A3/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/zh/categories/%E5%AF%AB%E6%89%A3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>讀書</title>
-      <link>https://blog.garyyeap.rocks/zh/categories/%E8%AE%80%E6%9B%B8/</link>
-      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      <link>https://blog.garyyeap.com/zh/categories/%E8%AE%80%E6%9B%B8/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.rocks/zh/categories/%E8%AE%80%E6%9B%B8/</guid>
+      <guid>https://blog.garyyeap.com/zh/categories/%E8%AE%80%E6%9B%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>流浪</title>
+      <link>https://blog.garyyeap.com/zh/categories/%E6%B5%81%E6%B5%AA/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/zh/categories/%E6%B5%81%E6%B5%AA/</guid>
       <description></description>
     </item>
     
