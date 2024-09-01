@@ -26,6 +26,16 @@
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/event-loop/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/event-loop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/event-loop/"
+                />
   </url><url>
     <loc>https://blog.garyyeap.com/zh/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>
@@ -42,6 +52,16 @@
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/javascript/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/javascript/"
+                />
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>

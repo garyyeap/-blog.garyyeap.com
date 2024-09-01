@@ -15,7 +15,7 @@
       <description>前言 最近被問到 Microtask 和 Marcotask 時發現自己對 Event loop 的理解似乎不是很全面，找了網路上一些文章感覺講得也不是很全面，直到看到這個演講才算解惑:
   這篇文章是我的理解和整理，因爲對 W3C 原文定義理解困難，所以這理解主要來源是上面的這個影片和其他講得不是那麼全面的文章，所以不一定全對就是。
 PS： 注意規範中沒有 Marcotask 這名詞，只有 Tasks，但大家好像都約定成俗的稱爲 Marcotask 作爲 Mircotask 的對比，下面跟隨習慣用 Mircotask。
-Event Loop 要理解 Event loop 首先要理解的是 Javascript 是個 single thread 語言，被設計成 single thread 原因很容易理解，主要是因爲 JS 其中一個主要功能的是對 DOM 做操作，如果有其它語言經驗的話，應該可以知道有 mulit threads/processes 的語言對文件的 IO 處理有多麻煩，不了解的可以去查一下 File lock between threads and processes 關鍵字。Event loop 則是爲了在 single thread 環境下模擬多工而設計出來的解決方案， single thread 的好處是可以讓寫程式變得比較簡單，壞處是只能同時做一件事，舉例來說就像超商只有一個店員，那個店員在微波食物食物時就只能呆等無法做結帳等其它事情，你可能會想不對啊，微波時把食物放進去定好時間後可以做其它事情啊，對，想像微波食物這件事就是一個 async 如 fetch 的工作，結帳是如 Dom 操作 sync 工作， 店員還是只有一個，但透過一些合理的安排他可以做到類似多工的效果，Event loop 就是設計來這種模擬多工成爲可能。</description>
+Event Loop 要理解 Event loop 首先要理解的是 Javascript 是個 single thread 語言，被設計成 single thread 原因很容易理解，主要是因爲 JS 其中一個主要功能的是對 DOM 做操作，如果有其它語言經驗的話，應該可以知道有 mulit threads/processes 的語言對文件的 IO 處理有多麻煩，不了解的可以去查一下 File lock between threads and processes 關鍵字。Event loop 則是爲了在 single thread 環境下模擬多工而設計出來的解決方案， single thread 的好處是可以讓寫程式變得比較簡單，壞處是只能同時做一件事，舉例來說就像超商只有一個店員，那個店員在微波食物食物時就只能呆等無法做結帳等其它事情，你可能會想不對啊，微波時把食物放進去定好時間後可以做其它事情啊，對，想像微波食物這件事就是一個 async 如 fetch 的工作，結帳是如 DOM 操作 sync 工作， 店員還是只有一個，但透過一些合理的安排他可以做到類似多工的效果，Event loop 就是設計來這種模擬多工成爲可能。</description>
     </item>
     
   </channel>

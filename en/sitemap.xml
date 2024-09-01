@@ -2,6 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.garyyeap.com/en/categories/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/categories/"
+                />
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/categories/coding/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/tags/event-loop/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/event-loop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/event-loop/"
+                />
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/"
+                />
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/tags/javascript/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/javascript/"
+                />
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/reunderstanding-event-loop/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/tags/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/"
+                />
+  </url><url>
     <loc>https://blog.garyyeap.com/en/authors/</loc>
     <xhtml:link
                 rel="alternate"
@@ -14,30 +85,6 @@
                 href="https://blog.garyyeap.com/en/authors/"
                 />
   </url><url>
-    <loc>https://blog.garyyeap.com/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.garyyeap.com/zh/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.garyyeap.com/en/categories/"
-                />
-  </url><url>
-    <loc>https://blog.garyyeap.com/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.garyyeap.com/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.garyyeap.com/en/"
-                />
-  </url><url>
     <loc>https://blog.garyyeap.com/en/series/</loc>
     <xhtml:link
                 rel="alternate"
@@ -48,18 +95,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.garyyeap.com/en/series/"
-                />
-  </url><url>
-    <loc>https://blog.garyyeap.com/en/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.garyyeap.com/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.garyyeap.com/en/tags/"
                 />
   </url>
 </urlset>

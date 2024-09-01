@@ -455,7 +455,7 @@ if (!doNotTrack) {
 <li>&lsquo;inline&rsquo; - this is not recommended. Helpers will be inserted in each file using this option. This can cause serious code duplication. This is the default Babel behavior as Babel operates on isolated files - however, as Rollup is a bundler and is project-aware (and therefore likely operating across multiple input files), the default of this plugin is &ldquo;bundled&rdquo;.</li>
 </ul>
 </blockquote>
-<p>簡單來說如果是開發套件的話，比較建議用 <code>transform-runtime</code> 方式，如果是開發應用的話，建議用 Rollup 自己提供的 <code>bundled</code> 方式，基本上就是把所有 <code>helpers</code> 用成一份，我自己猜測理論上會在應用層加一個 scope 來保證只會套用/影響到應用層。以上就簡單說明，只是現實世界的具體情況會更複雜，之後會再寫一篇開發/載入模組時要注意跟可以優化的事項。</p>
+<p>簡單來說如果是開發套件的話，比較建議用 <code>transform-runtime</code> 方式，如果是開發應用的話，建議用 Rollup 自己提供的 <code>bundled</code> 方式，基本上就是把所有 <code>helpers</code> 用成一份，我自己猜測理論上會在應用層加一個 scope 來保證只會套用/影響到應用層。</p>
 
 </div>
 
