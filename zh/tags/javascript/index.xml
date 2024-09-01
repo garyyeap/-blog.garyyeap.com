@@ -8,10 +8,10 @@
     <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.com/zh/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>重新理解 Event Loop</title>
-      <link>https://blog.garyyeap.com/zh/code/reunderstanding-event-loop/</link>
+      <link>https://blog.garyyeap.com/zh/code/reunderstanding-the-event-loop/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.com/zh/code/reunderstanding-event-loop/</guid>
+      <guid>https://blog.garyyeap.com/zh/code/reunderstanding-the-event-loop/</guid>
       <description>前言 最近被問到 Microtask 和 Marcotask 時發現自己對 Event loop 的理解似乎不是很全面，找了網路上一些文章感覺講得也不是很全面，直到看到這個演講才算解惑:
   這篇文章是我的理解和整理，因爲對 W3C 原文定義理解困難，所以這理解主要來源是上面的這個影片和其他講得不是那麼全面的文章，所以不一定全對就是。
 PS： 注意規範中沒有 Marcotask 這名詞，只有 Tasks，但大家好像都約定成俗的稱爲 Marcotask 作爲 Mircotask 的對比，下面跟隨習慣用 Mircotask。
@@ -37,11 +37,11 @@ cd {prefix}/lib/node_modules 在想測試該套件的應用/套件目錄下
     </item>
     
     <item>
-      <title>詳解 @babel/plugin-transform-runtime</title>
-      <link>https://blog.garyyeap.com/zh/code/babel-transfrom-runtime-expained/</link>
+      <title>babel transform runtime 詳解</title>
+      <link>https://blog.garyyeap.com/zh/code/babel-transform-runtime-explained/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.com/zh/code/babel-transfrom-runtime-expained/</guid>
+      <guid>https://blog.garyyeap.com/zh/code/babel-transform-runtime-explained/</guid>
       <description>@babel/plugin-transform-runtime 主要是要解決 Polyfill、Helper 和 Regenerator 編譯產生的一些問題，下面會逐一介紹和講解其解決的方法。
 Polyfill 有在寫網頁前端的人對這名詞應該都不陌生，如果你丟這個詞去查字典的話，它的解釋是某種填充材料，在 Polyfill 這個名詞出現以前有另一個名詞叫 Shim， 同樣如果去查字典的解釋是墊片，兩者之間有什麼不同呢？舉個例子，假如一面牆上破了一個洞，你用一塊板子釘上去蓋住它那就是 Shim，如果你用補土把它補好補滿那就是 Polyfill，差異在於前者你可以很明顯知道有個不一樣的外來物，後者你不會有感覺。換成程式碼的話，如果要解決不同瀏覽器處理 fullscreen api 差異的問題:
 Shim 形式(Source)：

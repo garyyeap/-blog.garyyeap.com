@@ -8,10 +8,10 @@
     <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.com/zh/tags/event-loop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>重新理解 Event Loop</title>
-      <link>https://blog.garyyeap.com/zh/code/reunderstanding-event-loop/</link>
+      <link>https://blog.garyyeap.com/zh/code/reunderstanding-the-event-loop/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.com/zh/code/reunderstanding-event-loop/</guid>
+      <guid>https://blog.garyyeap.com/zh/code/reunderstanding-the-event-loop/</guid>
       <description>前言 最近被問到 Microtask 和 Marcotask 時發現自己對 Event loop 的理解似乎不是很全面，找了網路上一些文章感覺講得也不是很全面，直到看到這個演講才算解惑:
   這篇文章是我的理解和整理，因爲對 W3C 原文定義理解困難，所以這理解主要來源是上面的這個影片和其他講得不是那麼全面的文章，所以不一定全對就是。
 PS： 注意規範中沒有 Marcotask 這名詞，只有 Tasks，但大家好像都約定成俗的稱爲 Marcotask 作爲 Mircotask 的對比，下面跟隨習慣用 Mircotask。

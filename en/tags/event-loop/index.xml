@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.com/en/tags/event-loop/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Reunderstanding the Event Loop</title>
-      <link>https://blog.garyyeap.com/en/reunderstanding-event-loop/</link>
+      <title>Reunderstanding Javascript&#39;s Event Loop</title>
+      <link>https://blog.garyyeap.com/en/coding/reunderstanding-javascript-event-loop/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.garyyeap.com/en/reunderstanding-event-loop/</guid>
+      <guid>https://blog.garyyeap.com/en/coding/reunderstanding-javascript-event-loop/</guid>
       <description>Preface Recently, when asked about Microtask and Macrotask, I realized that my understanding of the Event Loop was lacking. I researched several articles, but none provided a thorough explanation—until I came across this talk, which finally clarified everything for me:
   This article reflects my understanding. Since I found the W3C&amp;rsquo;s original definitions difficult to understand, my understanding mainly comes from the video above and other articles that weren&amp;rsquo;t as comprehensive, so it might not be entirely accurate.</description>
     </item>

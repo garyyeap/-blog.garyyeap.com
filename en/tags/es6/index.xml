@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>es6 on Indecision</title>
+    <link>https://blog.garyyeap.com/en/tags/es6/</link>
+    <description>Recent content in es6 on Indecision</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 25 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.garyyeap.com/en/tags/es6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Babel transform runtime explained</title>
+      <link>https://blog.garyyeap.com/en/coding/babel-transform-runtime-explained/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/en/coding/babel-transform-runtime-explained/</guid>
+      <description>@babel/plugin-transform-runtime main goal is to address some issues that arise from Polyfill, Helper, and Regenerator compilation. The following sections will introduce and explain the solutions to these problems one by one.
+Polyfill People who work on web front-end development should be familiar with this term. If you look up this term in a dictionary, its explanation is some kind of filling material. Before the term Polyfill came into use, there was another term called Shim.</description>
+    </item>
+    
+  </channel>
+</rss>

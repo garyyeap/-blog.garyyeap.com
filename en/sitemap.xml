@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.garyyeap.com/en/coding/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.garyyeap.com/en/categories/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -57,7 +60,7 @@
                 href="https://blog.garyyeap.com/en/tags/javascript/"
                 />
   </url><url>
-    <loc>https://blog.garyyeap.com/en/reunderstanding-event-loop/</loc>
+    <loc>https://blog.garyyeap.com/en/coding/reunderstanding-javascript-event-loop/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.com/en/tags/</loc>
@@ -71,6 +74,61 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.garyyeap.com/en/tags/"
+                />
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/tags/babel/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/babel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/babel/"
+                />
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/coding/babel-transform-runtime-explained/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/tags/es6/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/es6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/es6/"
+                />
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/tags/plugin-transform-runtime/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/plugin-transform-runtime/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/plugin-transform-runtime/"
+                />
+  </url><url>
+    <loc>https://blog.garyyeap.com/en/tags/polyfill/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/polyfill/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/polyfill/"
                 />
   </url><url>
     <loc>https://blog.garyyeap.com/en/authors/</loc>

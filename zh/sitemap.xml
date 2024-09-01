@@ -79,7 +79,7 @@
     <loc>https://blog.garyyeap.com/zh/categories/%E5%AF%AB%E6%89%A3/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.garyyeap.com/zh/code/reunderstanding-event-loop/</loc>
+    <loc>https://blog.garyyeap.com/zh/code/reunderstanding-the-event-loop/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/node/</loc>
@@ -123,26 +123,66 @@
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/babel/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/babel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/babel/"
+                />
+  </url><url>
+    <loc>https://blog.garyyeap.com/zh/code/babel-transform-runtime-explained/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/covid-19/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/es6/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/es6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/es6/"
+                />
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/plugin-transform-runtime/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/plugin-transform-runtime/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/plugin-transform-runtime/"
+                />
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/polyfill/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.garyyeap.com/en/tags/polyfill/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.garyyeap.com/zh/tags/polyfill/"
+                />
   </url><url>
     <loc>https://blog.garyyeap.com/zh/categories/%E6%B5%81%E6%B5%AA/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/%E7%96%AB%E6%83%85/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.garyyeap.com/zh/code/babel-transfrom-runtime-expained/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.garyyeap.com/zh/tags/%E5%8F%8D%E7%83%8F%E6%89%98%E9%82%A6/</loc>

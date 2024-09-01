@@ -24,5 +24,41 @@
       <description></description>
     </item>
     
+    <item>
+      <title>babel</title>
+      <link>https://blog.garyyeap.com/en/tags/babel/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/en/tags/babel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>es6</title>
+      <link>https://blog.garyyeap.com/en/tags/es6/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/en/tags/es6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plugin-transform-runtime</title>
+      <link>https://blog.garyyeap.com/en/tags/plugin-transform-runtime/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/en/tags/plugin-transform-runtime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>polyfill</title>
+      <link>https://blog.garyyeap.com/en/tags/polyfill/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.garyyeap.com/en/tags/polyfill/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
